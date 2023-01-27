@@ -1,0 +1,28 @@
+{% load static %}
+
+
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left uk-padding uk-padding-remove-vertical">
+<a href="#" class="uk-logo uk-width-1-4" >
+    <img src="{% static 'logo_GDM.png' %}" alt="log_GDM" class="uk-width-1-4"/>
+</a>
+    </div>
+    <div class="uk-navbar-right uk-padding uk-padding-remove-vertical">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li>
+                <a href="#">Parent</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Item</a></li>
+        </ul>
+
+    </div>
+</nav>
